@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Mobile Application</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+
+</head>
+<body>
+
+<!-- Begin: Main tweet list view -->
+<section id="pageTweetList" data-role="page">
+<header data-role="header" data-position="fixed">
+<h1>jqmTweet</h1>
+<a href="#pageSettings"
+data-transition="flip"
+data-role="button"
+data-icon="gear"
+data-iconpos="notext"
+class="ui-btn-right">Options</a>
+</header>
+<div class="content" data-role="content">
+<ul data-role="listview">
+<li><a href="#pageTweetDetail">Tweet!</a></li>
+<li><a href="#pageTweetDetail">Tweet!</a></li>
+<li><a href="#pageTweetDetail">Tweet!</a></li>
+<li><a href="#pageTweetDetail">Tweet!</a></li>
+<li><a href="#pageTweetDetail">Tweet!</a></li>
+<li><a href="#pageTweetDetail">Tweet!</a></li>
+<li><a href="#pageTweetDetail">Tweet!</a></li>
+<li><a href="#pageTweetDetail">Tweet!</a></li>
+</ul>
+</div>
+<footer data-role="footer" data-position="fixed"><h1>O'Reilly <i>jQuery Mobile</i></h1></footer>
+</section>
+<!-- End: Main tweet list view -->
+
+<!-- Begin: Settings page -->
+<section id="pageSettings" data-role="page">
+<header data-role="header"><h1>jqmTweet</h1></header>
+<div class="content" data-role="content">
+<h3>Settings</h3>
+<div data-role="fieldcontain">
+<label for="username">Twitter User Name:</label>
+<input type="text" id="username" value="">
+</div>
+<div data-role="fieldcontain">
+<label for="slider">Number of tweets to display:</label>
+<input type="range" id="slider" name="slider" min="5" max="50" value="">
+</div>
+</div>
+<footer data-role="footer"><h1>O'Reilly <i>jQuery Mobile</i></h1></footer>
+</section>
+<!-- End: Preferences page -->
+
+<!-- Begin: Tweet detail view -->
+<section id="pageTweetDetail" data-role="page">
+<header data-role="header"><h1>jqmTweet</h1></header>
+<div class="content" data-role="content">
+<div class="container-tweet">
+<p>Tweet!</p>
+</div>
+</div>
+<footer data-role="footer"><h1>O'Reilly <i>jQuery Mobile</i></h1></footer>
+</section>
+<!-- End: Tweet detail view -->
+
+<!-- Begin: Error page -->
+<section id="pageError" data-role="page" data-theme="e">
+<header data-role="header"><h1>jqmTweet</h1></header>
+<div class="content" data-role="content">
+</div>
+<footer data-role="footer"><h1>O'Reilly <i>jQuery Mobile</i></h1></footer>
+</section>
+<!-- End: Error page -->
+
+</body>
+</html>
+</body>
+</html>
