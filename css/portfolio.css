@@ -1,0 +1,65 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+  border-radius: 0;
+}
+
+.jumbotron {
+  background: transparent url('../images/gingham.png');
+  text-shadow: 1px 1px #000;
+  color: #fff;
+  text-align: center;
+}
+
+.portfolio_link {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+  .portfolio_link_thumb {
+    width: 100%;
+  }
+  .portfolio_link_title {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+
+.portfolio_modal .modal-content {
+  margin-top: 10px;
+}
+  .portfolio_modal .modal-body {
+    margin: 12px 0;
+  }
+    .portfolio_modal button.close {
+      margin-right: 4px;
+    }
+    .modal_image_link {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+      .modal_image {
+        width: 100%;
+        height: auto;
+      }
+    .portfolio_item_description {
+      margin-top: 15px;
+      background: #eee;
+      padding: 10px;
+      border-radius: 3px;
+    }
+
+.contact {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .portfolio_link {
+    margin-bottom: 20px;
+  }
+}
