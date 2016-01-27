@@ -44,8 +44,10 @@ body {
       display: block;
     }
       .modal_image {
-        width: 100%;
+        max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
       }
     .portfolio_item_description {
       margin-top: 15px;
