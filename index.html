@@ -48,7 +48,7 @@
           <h2>About</h2>
         </div>
         <p>
-          Hi! I'm Julian Lord, a web developer based out of the Toronto area. I've worked on a variety of projects, from client based projects at agencies such as <a href="http://www.nascentdigital.com">Nascent</a> and 
+          Hi! I'm Julian Lord, a web developer based out of the Toronto area. I've worked on a variety of projects, from client based projects at agencies such as <a href="http://www.nascentdigital.com">Nascent</a> and
           <a href="http://tctranscontinental.com/en/about/profile/tc-media">TC Media</a>, as well as product based
           companies like <a href="http://www.bibliocommons.com">Bibliocommons</a> and <a href="http://www.worldgaming.com">WorldGaming</a>. In addition, I have a Bachelor of Commerce in
           Business Technology Management, which gives me a great knowledge of the business side of the tech industry.
@@ -59,11 +59,12 @@
         <div class="page-header">
           <h2>Experience</h2>
         </div>
-        <p>I have over six years of experience as a front-end developer creating high quality solutions for a variety of clients. In that time, I've developed:</p>
+        <p>I have over eight years of experience as a front-end developer creating high quality solutions for a variety of clients. In that time, I've developed:</p>
 
         <ul>
           <li>Media rich sites with image galleries, blogs, and animations</li>
-          <li>JavaScript driven applications using Angular, Backbone, and jQuery</li>
+          <li>JavaScript driven applications using React, Angular, Backbone, and jQuery</li>
+          <li>Node and Express based server-side applications</li>
           <li>Hybrid mobile apps using Ionic and Cordova</li>
           <li>HTML Layer for a Flash based contest site, driven by a modal framework using AJAX</li>
           <li>Mobile websites including a site for a large grocery chain that included Google Maps integration and media section</li>
@@ -75,33 +76,51 @@
         <div class="page-header">
           <h2>My Work</h2>
         </div>
-        
+
         <div class="portfolio-section">
           <div class="row">
             <div class="col-md-4">
               <a href="#ex1" role="button" class="portfolio_link" data-toggle="modal" data-target="">
+                <span class="portfolio_link_title">Bibliocommons Search React Rebuild</span>
+                <img class="portfolio_link_thumb" src="images/frbr.png" />
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="#ex2" role="button" class="portfolio_link" data-toggle="modal" data-target="">
                 <span class="portfolio_link_title">Heart &amp; Stroke Foundation &lt;30 Days</span>
                 <img class="portfolio_link_thumb" src="images/hsf30thumb.png" />
               </a>
             </div>
 
             <div class="col-md-4">
-              <a href="#ex2" role="button" class="portfolio_link" data-toggle="modal" data-target="">
+              <a href="#ex3" role="button" class="portfolio_link" data-toggle="modal" data-target="">
                 <span class="portfolio_link_title">Keek Messenger</span>
                 <img class="portfolio_link_thumb" src="images/keek_messenger.png" />
               </a>
             </div>
-
-            <div class="col-md-4">
-              <a href="#ex3" role="button" class="portfolio_link" data-toggle="modal" data-target="">
-                <span class="portfolio_link_title">Bibliocommons E-Reader</span>
-                <img class="portfolio_link_thumb" src="images/bibliocommons_reader_shelf.png" />
-              </a>
-            </div>
           </div>
 
-          <!-- Modal: HSF <30 Days -->
+          <!-- Modal: Bibliocommons E-Reader -->
           <div class="modal fade" id="ex1">
+            <div class="modal-dialog modal-lg portfolio_modal">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="modal-body">
+                  <a href="images/keek_messenger.png" class="modal_image_link">
+                    <img class="modal_image" src="images/frbr.png" />
+                  </a>
+                  <p class="portfolio_item_description">
+                    Helped to implement new features in Bibliocommons' new React-based tech stack. This image shows the grouped search feature,
+                    which I helped to conceptualize and build the user interface for.
+                  </p>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+
+          <!-- Modal: HSF <30 Days -->
+          <div class="modal fade" id="ex2">
             <div class="modal-dialog modal-lg portfolio_modal">
               <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -118,7 +137,7 @@
           </div><!-- /.modal -->
 
           <!-- Modal: Keek Messenger -->
-          <div class="modal fade" id="ex2">
+          <div class="modal fade" id="ex3">
             <div class="modal-dialog modal-lg portfolio_modal">
               <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -128,23 +147,6 @@
                   </a>
                   <p class="portfolio_item_description">
                       Developed a browser based client for the Keek Messenger service from the ground up using a modified Backbone application structure. Keek is in the process of retiring the messenger, but it is still visible at <a href="http://classic.keek.com">classic.keek.com</a> after you've signed in. Code samples are available upon request.
-                  </p>
-                </div>
-              </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-          </div><!-- /.modal -->
-
-          <!-- Modal: Bibliocommons E-Reader -->
-          <div class="modal fade" id="ex3">
-            <div class="modal-dialog modal-lg portfolio_modal">
-              <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <div class="modal-body">
-                  <a href="images/keek_messenger.png" class="modal_image_link">
-                    <img class="modal_image" src="images/bibliocommons_reader_shelf.png" />
-                  </a>
-                  <p class="portfolio_item_description">
-                    A web-based e-reader for EPUB titles which users can check out through their library. I was involved in ongoing feature development and support of the reader. I also spearheaded an Angular refactor for the app, and was reponsible for implementing the reader shelf part of the refactor.
                   </p>
                 </div>
               </div><!-- /.modal-content -->
@@ -164,12 +166,12 @@
             <th>Other Cool Stuff</th>
           </tr>
           <tr>
-            <td>HTML 5</td>
+            <td>HTML</td>
             <td>Ruby</td>
             <td>Version control tools (GIT, SVN)</td>
           </tr>
           <tr>
-            <td>CSS 3</td>
+            <td>CSS</td>
             <td>Postgres, MySQL, MS SQL</td>
             <td>Experience with social network APIs (Facebook, Twitter, Keek)</td>
           </tr>
@@ -179,8 +181,8 @@
             <td>Issue and project tracking tools (JIRA, Redmine, Mantis, Basecamp)</td>
           </tr>
           <tr>
-            <td>AngularJS, BackboneJS</td>
-            <td>ASP.NET 3.5 and 4.0</td>
+            <td>React, AngularJS</td>
+            <td>Node.JS</td>
             <td>Sublime Text</td>
           </tr>
           <tr>
@@ -188,7 +190,7 @@
             <td></td>
             <td>Photoshop, Illustrator</td>
           </tr>
-        </table> 
+        </table>
       </section>
 
       <section id="contact" class="contact">
