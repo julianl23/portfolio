@@ -30,17 +30,16 @@
         }
 
         section {
-            border-top: 1px solid #000;
             overflow: hidden;
             display: block;
         }
 
         h1 {
-            font-size: 18px;
+            font-size: 20px;
         }
 
         h2 {
-            font-size: 16px;
+            font-size: 18px;
         }
 
         h3 {
@@ -62,9 +61,12 @@
             float: left;
         }
 
-        #education h3,
-        #career h3 {
+        #education h3 {
             margin-bottom: 5px;
+        }
+
+        #education p {
+            margin-top: 0;
         }
 
         .employer {
@@ -87,13 +89,42 @@
 
         .employer,
         .employment-period {
-            margin-top: 5px;
+            margin: 0;
+            line-height: 16px;
+        }
+
+        .employment-intro {
+            display: flex;
+            align-items: center;
+            margin: 0 24px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            padding-bottom: 12px;
+            padding: 12px 0;
+        }
+
+        .employment-intro h3 { 
+            margin: 0;
+        }
+        
+        .employment-intro-details {
+            margin-left: auto;
+            text-align: right;
         }
 
         @media print {
             body {
                 /*font-size: 17px;*/
                 font-size: 14pt;
+            }
+
+            .employer,
+            .employment-period {
+                line-height: 16pt;
+            }
+
+            #omx {
+                margin-top: 7em;
             }
         }
     </style>
@@ -103,132 +134,136 @@
     <header>
         <h1>Julian Lord</h1>
         <ul>
-            <li>364 Melita Ave, Toronto, ON, M6G 2A3</li>
             <li>
-                <a href="tel:6478690730">(647) 869-0730</a>
+                <a href="tel:6478690730">(647) 869-0730</a> | <a href="mailto:julianl23@gmail.com">julianl23@gmail.com</a>
             </li>
             <li>
-                <a href="mailto:julianl23@gmail.com">julianl23@gmail.com</a>
+                <a href="https://github.com/julianl23">https://github.com/julianl23</a>
             </li>
         </ul>
     </header>
     <article id="resume">
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Expert
-                    <ul>
-                        <li>HTML, CSS, JavaScript, React</li>
-                        <li>Full stack development with client-side single-page application frameworks and server-side frameworks
-                            such as Node/Express and Ruby on Rails</li>
-                    </ul>
-                </li>
-                <li>Knowledgeable
-                    <ul>
-                        <li>Node.js, AngularJS</li>
-                        <li>Web Accessibility</li>
-                        <li>Testing frameworks such as Jest, Mocha, Enzyme, and Rspec
-                    </ul>
-                    </li>
-                    <li>Agile development methodologies, Git, JIRA, CircleCI, Cypress, Jenkins, Selenium, Test Driven Development</li>
-                    <li>Understanding of business and marketing concepts through a Bachelor of Commerce in Business Technology
-                        Management
-                    </li>
-            </ul>
-        </section>
-
         <section id="career">
-            <h2>Career History &amp; Accomplishments</h2>
+            <h2>Experience</h2>
 
-            <h3>Senior Full-Stack Developer</h3>
-            <p class="employer">Prodigy Game, Toronto, ON</p>
-            <p class="employment-period">January 2019 - Present</p>
+            <div class="employment-intro">
+                <h3>Development Engineer</h3>
+                <div class="employment-intro-details">
+                    <p class="employer">Points, Toronto, ON</p>
+                    <p class="employment-period">March 2020 - Present</p>
+                </div>
+            </div>
+            <ul>
+                <li>Built a templating system to allow storefront projects to inherit configurations and assets from other storefronts</li>
+                <li>Wrote the technical solution document for the HTML template for the Accelerator project, including a strategy for CSS variables</li>
+            </ul>
+
+            <div class="employment-intro">
+                <h3>Senior Full-Stack Developer</h3>
+                <div class="employment-intro-details">
+                    <p class="employer">Prodigy Game, Toronto, ON</p>
+                    <p class="employment-period">January 2019 - February 2020</p>
+                </div>
+            </div>
             <ul>
                 <li>Acted as one of the main developers on the Math Coaching project
                     <ul>
                         <li>Participated in and contributed to early-stage discussions around the direction of the project, from technical and business perspectives</li>
-                        <li>Built out a landing page and sign-up flow Math Coaching</li>
+                        <li>Built out a landing page and sign-up flow</li>
                         <li>Worked with stakeholders and managers to determine future technical direction of the project</li>
                     </ul>
                 </li>
-                <li>Built a new onboarding experience for Parent app</li>
+                <li>Built a new onboarding experience for the Parent app</li>
                 <li>Created a cancellation questionnaire page to capture data from users cancelling their memberships</li>
                 <li>Ran mentoring sessions with a QA co-op student looking to learn about full-stack development</li>
             </ul>
 
-            <h3>Senior Front-End Developer</h3>
-            <p class="employer">Hubba, Toronto, ON</p>
-            <p class="employment-period">August 2018 - December 2018</p>
+            <div class="employment-intro">
+                <h3>Senior Front-End Developer</h3>
+                <div class="employment-intro-details">
+                    <p class="employer">Hubba, Toronto, ON</p>
+                    <p class="employment-period">August 2018 - December 2018</p>
+                </div>
+            </div>
             <ul>
                 <li>Implemented new login and reset password flow using React and GraphQL</li>
                 <li>Implemented end-to-end testing in Hubba's main React app using Cypress and Jenkins</li>
                 <li>Wrote Node.JS and Mongoose scripts to migrate and make changes to data in Hubba's MongoDB databases</li>
             </ul>
 
-            <h3>Senior Web Developer</h3>
-            <p class="employer">ecobee, Toronto, ON</p>
-            <p class="employment-period">October 2017 - July 2018</p>
+            <div class="employment-intro">
+                <h3>Senior Web Developer</h3>
+                <div class="employment-intro-details">
+                    <p class="employer">ecobee, Toronto, ON</p>
+                    <p class="employment-period">October 2017 - July 2018</p>
+                </div>
+            </div>
             <ul>
                 <li>Managed and maintained the React implementation of the ecobee Design Language, a design system used by multiple
                     projects at ecobee
-                    <ul>
-                        <li>Managed a backlog of maintenance tasks and bug fixes for components</li>
-                        <li>Ran bi-weekly meetings with front-end developers and designers from all teams at the company</li>
-                    </ul>
                 </li>
                 <li>Helped to develop new features for the internal administrative portal</li>
                 <li>Ported Angular 1.4 code to React for ecobee's Consumer Portal</li>
             </ul>
 
-            <h3>Senior Front-End Developer</h3>
-            <p class="employer">Bibliocommons, Toronto, ON</p>
-            <p class="employment-period">November 2016 - September 2017</p>
+            <div class="employment-intro">
+                <h3>Senior Front-End Developer</h3>
+                <div class="employment-intro-details">
+                    <p class="employer">Bibliocommons, Toronto, ON</p>
+                    <p class="employment-period">November 2016 - September 2017</p>
+                </div>
+            </div>
             <ul>
-                <li>Returned as a senior developer to work on a React redesign of the platform
-                    <ul>
-                        <li>Worked with React and Redux to develop new features for a redesigned search feature</li>
-                        <li>Helped to conceptualize and implement grouped search results feature</li>
-                        <li>Developed Express server-side code to interact with a REST API</li>
-                    </ul>
-                </li>
+                <li>Returned as a senior developer to work on a React and Redux based redesign of the search feature
+                <li>Helped to conceptualize and implement grouped search results feature</li>
+                <li>Developed Express server-side code to interact with a REST API</li>
             </ul>
 
-            <h3>Front-End Developer</h3>
-            <p class="employer">OMX, Toronto, ON</p>
-            <p class="employment-period">March 2016 - November 2016</p>
+
+            <div class="employment-intro" id="omx">
+                <h3>Front-End Developer</h3>
+                <div class="employment-intro-details">
+                    <p class="employer">OMX, Toronto, ON</p>
+                    <p class="employment-period">March 2016 - November 2016</p>
+                </div>
+            </div>
             <!-- <p class="headline">
                 OMX is a collaborative platform for accessing procurement opportunities and analyzing the economic impact of organizations
                 in the domestic and international defence, aerospace, oil &amp; gas, mining and construction industries,
                 and in other complex global supply chains.
             </p> -->
             <ul>
-                <li>Introduced React to OMX's environment as part of a new onboarding experience and checkout flow for customers</li>
-                <li>Worked across the stack, implementing new back-end features in Ruby on Rails such as questionnaires and new
-                    features for company profiles</li>
+                <li>Built a new onboarding experience and checkout flow for customers using React</li>
+                <li>Implemented new back-end features in Ruby on Rails such as questionnaires and new features for company profiles</li>
                 <li>Created wireframes for new features such as onboarding, checkout, and questionnaires</li>
             </ul>
 
-            <h3>Front-End Software Engineer</h3>
-            <p class="employer">WorldGaming, Toronto, ON</p>
-            <p class="employment-period">September 2015 - March 2016</p>
-            <!-- <p class="headline">
-                WorldGaming hosts free-entry, pay-to-play, and live in-person tournaments for all competitive gamers of all skills.
-            </p> -->
+            <div class="employment-intro">
+                <h3>Front-End Software Engineer</h3>
+                <div class="employment-intro-details">
+                    <p class="employer">WorldGaming, Toronto, ON</p>
+                    <p class="employment-period">September 2015 - March 2016</p>
+                </div>
+            </div>
             <ul>
                 <li>Built an MVP for WorldGaming's Android mobile app
                     <ul>
-                        <li>Built as a hybrid app, using the Ionic framework</li>
+                        <li>Built a hybrid app, using the Ionic framework</li>
                         <li>Helped to introduce Agile improvements within the team such as daily standups and sprint planning
                             meetings
                         </li>
-                        <li>Mentored a junior developer who was learning JavaScript</li>
+                        <li>Offered mentorship for a junior developer learning JavaScript</li>
                     </ul>
                 </li>
             </ul>
 
-            <h3>App Engineer, Project Lead</h3>
-            <p class="employer">Nascent, Toronto, ON</p>
-            <p class="employment-period">March 2015 - September 2015</p>
+            <div class="employment-intro">
+                <h3>App Engineer, Project Lead</h3>
+                <div class="employment-intro-details">
+                    <p class="employer">Nascent, Toronto, ON</p>
+                    <p class="employment-period">March 2015 - September 2015</p>
+                </div>
+            </div>
             <ul>
                 <li>Acted as project lead for a v2 of the Heart and Stroke Foundation's &lt;30 Days app for iOS and Android,
                     using the Ionic framework
@@ -242,18 +277,18 @@
                 </li>
             </ul>
 
-            <h3>Software Engineer - Front End, Digital Front-End Team Lead</h3>
-            <p class="employer">Bibliocommons, Toronto, ON</p>
-            <p class="employment-period">May 2013 - March 2015</p>
-            <!-- <p class="headline">
-                Bibliocommons is a SAAS library catalogue platform providing libraries with modern, advanced catalogues that allow for smart
-                searches, social features, and more.
-            </p> -->
+            <div class="employment-intro">
+                <h3>Software Engineer - Front End, Digital Front-End Team Lead</h3>
+                <div class="employment-intro-details">
+                    <p class="employer">Bibliocommons, Toronto, ON</p>
+                    <p class="employment-period">May 2013 - March 2015</p>
+                </div>
+            </div>            
             <ul>
                 <li>Acted as front-end team lead for the Digital team
                     <ul>
                         <li>Participated in and advised on backlog grooming and management</li>
-                        <li>Provided estimation and schedule work for future projects</li>
+                        <li>Provided estimation and scheduled work for future projects</li>
                         <li>Implemented an ebook acquisitions platform on top of the existing Bibliocommons architecture</li>
                         <li>Maintained and developed new features for Bibliocommons's e-reader and e-commerce projects</li>
                     </ul>
@@ -283,7 +318,7 @@
             </ul> -->
         </section>
 
-        <section id="education">
+        <section id="education" class="education">
             <h2>Education</h2>
             <h3>Business Technology Management, BComm</h3>
             <p>Ryerson University, Toronto, ON</p>
@@ -292,6 +327,17 @@
                 <li>Application Development stream</li>
                 <li>Co-Op Option</li>
                 <li>Marketing Minor</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>    
+                <li>HTML, CSS, JavaScript, React</li>
+                <li>Node/Express, Ruby on Rails</li>
+                <li>Web Accessibility</li>
+                <li>Postgres, MongoDB</li>
+                <li>Testing frameworks such as Jest, Mocha, Enzyme, and Rspec
             </ul>
         </section>
     </article>
